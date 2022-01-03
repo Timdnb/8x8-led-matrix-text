@@ -19,6 +19,7 @@
 #define ROW_8 A2
 
 long t = 0;
+int interval = 500;
 
 const char string[] = "Write your text here";
 
@@ -71,7 +72,7 @@ void loop() {
         }
 
       // While loop to keep this letter for a certain time
-      while (millis()-t < 500){
+      while (millis()-t < interval){
         for (int j = 0; j < 8; j++)
         {
             for (int k = 7; k >= 0; k--)
@@ -83,7 +84,7 @@ void loop() {
             }
         }
     }
-    t += 500;
+    t += interval;
   }
 
 }
