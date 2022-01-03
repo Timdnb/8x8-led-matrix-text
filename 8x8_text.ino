@@ -33,9 +33,7 @@ const byte cols[] = {
 
 void led(int row, int column){
   for (int i = 0; i < 8; i++){
-      digitalWrite(cols[i], HIGH);}
-      
-  for (int i = 0; i < 8; i++){
+      digitalWrite(cols[i], HIGH);
       digitalWrite(rows[i], LOW);}
     
   digitalWrite(rows[row], HIGH);
@@ -65,9 +63,7 @@ void loop() {
       // If the character is a space, turn off all leds
       if (ascii_index == 32){
         for (int i = 0; i < 8; i++){
-          digitalWrite(cols[i], HIGH);}
-      
-        for (int i = 0; i < 8; i++){
+          digitalWrite(cols[i], HIGH);
           digitalWrite(rows[i], LOW);}
         }
 
